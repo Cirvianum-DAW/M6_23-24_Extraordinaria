@@ -1,4 +1,4 @@
-### UF 1: Sintaxi del llenguatge. Objectes predefinits del llenguatge
+### UF1: UF 1: Sintaxi del llenguatge. Objectes predefinits del llenguatge
 
 ---
 
@@ -6,7 +6,7 @@
 
    - A) El codi del servidor es pot veure des del navegador
    - B) El codi del client s'executa en un servidor remot
-   - C) El codi del servidor s'executa en el servidor, mentre que el del client s'executa en el navegador de l'usuari
+   - **C) El codi del servidor s'executa en el servidor, mentre que el del client s'executa en el navegador de l'usuari**
    - D) El codi del client es pot veure en el servidor
 
 ---
@@ -15,7 +15,7 @@
 
    - A) SpiderMonkey
    - B) Chakra
-   - C) V8
+   - **C) V8**
    - D) Nitro
 
 ---
@@ -23,7 +23,7 @@
 3. **Quina funció té l'Event Loop en JavaScript?**
 
    - A) Executa codi síncronament
-   - B) Gestió d'esdeveniments i processos asíncrons
+   - **B) Gestió d'esdeveniments i processos asíncrons**
    - C) Compila el codi JavaScript
    - D) Analitza el codi per errors
 
@@ -33,7 +33,7 @@
 
    - A) var
    - B) let
-   - C) const
+   - **C) const**
    - D) static
 
 ---
@@ -41,7 +41,7 @@
 5. **Quina és la sortida de la següent expressió: `2 + '2'`?**
 
    - A) 4
-   - B) 22
+   - **B) 22**
    - C) '4'
    - D) '2+2'
 
@@ -50,7 +50,7 @@
 6. **Quina és la sintaxi correcta per a un bucle `for` en JavaScript?**
 
    - A) `for i = 1 to 10`
-   - B) `for (let i = 0; i < 10; i++)`
+   - **B) `for (let i = 0; i < 10; i++)`**
    - C) `for (i < 10; i++)`
    - D) `for (i++ until 10)`
 
@@ -61,7 +61,7 @@
    - A) debug()
    - B) print()
    - C) log()
-   - D) console.log()
+   - **D) console.log()**
 
 ---
 
@@ -69,7 +69,7 @@
 
    - A) Chrome DevTools
    - B) Visual Studio Code
-   - C) Jest
+   - **C) Jest**
    - D) Node.js
 
 ---
@@ -79,7 +79,7 @@
    - A) window.navigator
    - B) window.history
    - C) window.location
-   - D) window.navigator.userAgent
+   - **D) window.navigator.userAgent**
 
 ---
 
@@ -87,7 +87,7 @@
 
     - A) Executa codi immediatament
     - B) Repeteix l'execució de codi cada interval de temps
-    - C) Executa codi després d'un cert interval de temps
+    - **C) Executa codi després d'un cert interval de temps**
     - D) Atura l'execució de codi
 
 ---
@@ -95,7 +95,7 @@
 11. **Quina propietat utilitzaries per a emmagatzemar dades a la sessió del navegador?**
 
     - A) localStorage
-    - B) sessionStorage
+    - **B) sessionStorage**
     - C) cookies
     - D) cacheStorage
 
@@ -103,7 +103,7 @@
 
 12. **Quina és la diferència entre `==` i `===` en JavaScript?**
 
-    - A) `==` compara valors, `===` compara valors i tipus
+    - **A) `==` compara valors, `===` compara valors i tipus**
     - B) `==` compara tipus, `===` compara valors
     - C) No hi ha diferència
     - D) `==` compara referències, `===` compara valors
@@ -119,7 +119,7 @@ b = 20;
 console.log(a);
 ```
 
-- A) 10
+- **A) 10**
 - B) 20
 - C) undefined
 - D) null
@@ -135,7 +135,7 @@ function add(x, y = 10) {
 console.log(add(5));
 ```
 
-- A) 15
+- **A) 15**
 - B) 5
 - C) NaN
 - D) undefined
@@ -149,7 +149,7 @@ let fruits = ["apple", "banana", "mango"];
 fruits.forEach((fruit) => console.log(fruit));
 ```
 
-- A) apple banana mango
+- **A) apple banana mango**
 - B) apple, banana, mango
 - C) ["apple", "banana", "mango"]
 - D) undefined
@@ -167,7 +167,7 @@ console.log(Object.keys(person));
 ```
 
 - A) ["John", 30]
-- B) ["name", "age"]
+- **B) ["name", "age"]**
 - C) ["John", "age"]
 - D) undefined
 
@@ -185,7 +185,7 @@ console.log(result);
 
 - A) 5
 - B) 10
-- C) 15
+- **C) 15**
 - D) 4
 
 ---
@@ -198,7 +198,7 @@ let y = 3;
 console.log(x * y);
 ```
 
-- A) 15
+- **A) 15**
 - B) 8
 - C) 53
 - D) 5
@@ -214,7 +214,7 @@ function myFunction(num) {
 console.log(myFunction(4));
 ```
 
-- A) true
+- **A) true**
 - B) false
 - C) undefined
 - D) null
@@ -228,7 +228,7 @@ console.log(typeof []);
 ```
 
 - A) "array"
-- B) "object"
+- **B) "object"**
 - C) "undefined"
 - D) "null"
 
@@ -250,7 +250,7 @@ myFunc();
 
 - A) 10 20
 - B) 20 20
-- C) 20 10
+- **C) 20 10**
 - D) 10 10
 
 ---
@@ -266,7 +266,7 @@ console.log(arr.length);
 - A) 3
 - B) 4
 - C) 10
-- D) 11
+- **D) 11**
 
 ---
 
@@ -281,7 +281,7 @@ for (let i = 0; i < arr.length; i++) {
 console.log(result);
 ```
 
-- A) 'abc'
+- **A) 'abc'**
 - B) 'a, b, c'
 - C) 'abc, '
 - D) 'cba'
@@ -297,8 +297,35 @@ console.log(y);
 ```
 
 - A) 4
-- B) 5
+- **B) 5**
 - C) 6
 - D) undefined
 
 ---
+
+### Llistat de respostes correctes:
+
+1. **C**
+2. **C**
+3. **B**
+4. **C**
+5. **B**
+6. **B**
+7. **D**
+8. **C**
+9. **D**
+10. **C**
+11. **B**
+12. **A**
+13. **A**
+14. **A**
+15. **A**
+16. **B**
+17. **C**
+18. **A**
+19. **A**
+20. **B**
+21. **C**
+22. **D**
+23. **A**
+24. **B**
