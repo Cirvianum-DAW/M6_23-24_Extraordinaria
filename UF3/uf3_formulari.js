@@ -1,21 +1,61 @@
-// Espera fins que el document estigui carregat completament;
-// Tot el teu codi JavaScript hauria d'anar dins d'aquesta funció
+// Espera fins que el document estigui carregat completament
 document.addEventListener("DOMContentLoaded", function () {
   // Selecciona el formulari de contacte
-
+  const contactForm = document.getElementById("contact-form");
   // Selecciona els inputs i els elements d'error
+  const nameInput = document.getElementById("name");
+  const emailInput = document.getElementById("email");
+  const messageInput = document.getElementById("message");
 
-  // Afegeix un esdeveniment de "submit" al formulari de contacte
+  const nameError = document.getElementById("name-error");
+  const emailError = document.getElementById("email-error");
+  const messageError = document.getElementById("message-error");
 
-  // Afegeix TOTS () els esdeveniments d'entrada als inputs per validar en TEMPS REAL (conforme l'usuari escriu)
-  // Fixa't que tens un <span> amb el missatge d'error per a cada input que està ocult per defecte
-  // Has de jugar amb la propietat "display" per mostrar/ocultar els missatges d'error (block/none)
+  // Afegeix un esdeveniment de submissió al formulari de contacte
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault(); // Evita que el formulari es presenti
+    validateForm(); // Valida el formulari
+  });
 
-  // El patró per validar l'email
-  const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+  // Afegeix esdeveniments d'entrada als inputs per validar en temps real
+  nameInput.addEventListener("input", function () {
+    if (nameInput.value.trim() === "") {
+      nameError.style.display = "block"; // Mostra el missatge d'error
+    } else {
+      nameError.style.display = "none"; // Amaga el missatge d'error
+    }
+  });
+
+  emailInput.addEventListener("input", function () {
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    if (!emailPattern.test(emailInput.value)) {
+      emailError.style.display = "block"; // Mostra el missatge d'error
+    } else {
+      emailError.style.display = "none"; // Amaga el missatge d'error
+    }
+  });
+
+  messageInput.addEventListener("input", function () {
+    if (messageInput.value.trim() === "") {
+      messageError.style.display = "block"; // Mostra el missatge d'error
+    } else {
+      messageError.style.display = "none"; // Amaga el missatge d'error
+    }
+  });
 
   // Funció per validar el formulari
   function validateForm() {
-    // Pots cridar aquesta funció per validr tot el formulari un cop es vol enviar
+    if (nameInput.value.trim() === "") {
+      nameError.style.display = "block"; // Mostra el missatge d'error
+    }
+
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    if (!emailPattern.test(emailInput.value)) {
+      emailError.style.display = "block"; // Mostra el missatge d'error
+    }
+
+    if (messageInput.value.trim() === "") {
+      messageError.style.display = "block"; // Mostra el missatge d'error
+    }
   }
 });
