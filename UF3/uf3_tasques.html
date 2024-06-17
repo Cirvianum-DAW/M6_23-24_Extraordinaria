@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Llista de Tasques</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="max-w-lg mx-auto mt-10">
+      <h1 class="text-2xl font-bold text-center mb-5">Llista de Tasques</h1>
+      <form id="task-form" class="mb-4">
+        <input
+          type="text"
+          id="task-input"
+          placeholder="Afegeix una nova tasca"
+          required
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        />
+        <button
+          type="submit"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-2"
+        >
+          Afegeix
+        </button>
+      </form>
+      <ul id="task-list" class="list-none p-0"></ul>
+    </div>
+  </body>
+</html>
