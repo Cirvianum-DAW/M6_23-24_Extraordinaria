@@ -25,8 +25,8 @@ console.log(date.getUTCFullYear() === 2023 && date.getUTCMonth() === 0);
 
 - A) true
 - B) false
-- C) undefined
-- D) Error
+- C) Error
+- D) undefined
 
 ---
 
@@ -37,10 +37,10 @@ let str = "hello world";
 console.log(str.toUpperCase().charAt(6));
 ```
 
-- A) W
+- A) R
 - B) O
-- C) R
-- D) L
+- C) L
+- D) W
 
 ---
 
@@ -54,9 +54,9 @@ console.log(func(5, 10).x);
 ```
 
 - A) { x: 5, y: 10 }
-- B) 5
+- B) Error
 - C) undefined
-- D) Error
+- D) 5
 
 ---
 
@@ -72,8 +72,8 @@ console.log(operate(square, 3, 4));
 
 - A) 7, 7
 - B) 12, 9
-- C) 7, 9
-- D) 7, 16
+- C) 7, 16
+- D) 7, 9
 
 ---
 
@@ -88,9 +88,9 @@ console.log(modifiedArr);
 ```
 
 - A) [1, 2, 3], [4, 3]
-- B) [1, 2, 3], [1, 4, 3]
+- B) [1, 4, 3], [4, 3]
 - C) [2, 3], [4, 3]
-- D) [1, 4, 3], [4, 3]
+- D) [1, 2, 3], [1, 4, 3]
 
 ---
 
@@ -104,8 +104,8 @@ console.log(arr);
 
 - A) ['a', 'b', 'c', 'd', 'x', 'y']
 - B) ['a', 'x', 'y', 'd']
-- C) ['a', 'x', 'b', 'c', 'd']
-- D) ['x', 'y', 'c', 'd']
+- C) ['x', 'y', 'c', 'd']
+- D) ['a', 'x', 'b', 'c', 'd']
 
 ---
 
@@ -119,9 +119,9 @@ console.log(sum);
 ```
 
 - A) 4
-- B) 6
+- B) 2
 - C) 10
-- D) 2
+- D) 6
 
 ---
 
@@ -134,8 +134,8 @@ console.log(result);
 ```
 
 - A) true
-- B) false
-- C) undefined
+- B) undefined
+- C) false
 - D) Error
 
 ---
@@ -149,9 +149,9 @@ console.log(newArr);
 ```
 
 - A) [1, 2, 3, 4]
-- B) [1, 4, 9, 16]
-- C) [0, 2, 6, 12]
-- D) [1, 3, 6, 10]
+- B) [1, 3, 6, 10]
+- C) [1, 4, 9, 16]
+- D) [0, 2, 6, 12]
 
 ---
 
@@ -180,9 +180,9 @@ console.log(arr);
 ```
 
 - A) [5, 4, 3, 2, 1], [5, 4, 3, 2, 1]
-- B) [1, 2, 3, 4, 5], [1, 2, 3, 4, 5]
-- C) [5, 4, 3, 2, 1], [1, 2, 3, 4, 5]
-- D) [5, 4, 3, 2, 1], []
+- B) [5, 4, 3, 2, 1], []
+- C) [1, 2, 3, 4, 5], [1, 2, 3, 4, 5]
+- D) [5, 4, 3, 2, 1], [1, 2, 3, 4, 5]
 
 ---
 
@@ -209,10 +209,10 @@ rect.dimensions = [20, 10];
 console.log(rect.area);
 ```
 
-- A) 50
+- A) Error
 - B) 200
 - C) undefined
-- D) Error
+- D) 50
 
 ---
 
@@ -233,10 +233,10 @@ const sq = new Square(5);
 console.log(sq.area);
 ```
 
-- A) 10
+- A) 5
 - B) 20
 - C) 25
-- D) 5
+- D) 10
 
 ---
 
@@ -250,10 +250,10 @@ map.set("a", 3);
 console.log(map.get("a"));
 ```
 
-- A) 1
-- B) 2
-- C) 3
-- D) undefined
+- A) undefined
+- B) 3
+- C) 2
+- D) 1
 
 ---
 
@@ -266,8 +266,8 @@ console.log(set.size);
 
 - A) 5
 - B) 4
-- C) 3
-- D) 2
+- C) 2
+- D) 3
 
 ---
 
@@ -282,9 +282,9 @@ console.log(map.has("x"));
 ```
 
 - A) false
-- B) true
+- B) Error
 - C) undefined
-- D) Error
+- D) true
 
 ---
 
@@ -298,9 +298,9 @@ set.clear();
 console.log(set.size);
 ```
 
-- A) 2
-- B) 0
-- C) 1
+- A) 0
+- B) 1
+- C) 2
 - D) undefined
 
 ---
@@ -324,9 +324,9 @@ console.log(zip, rest);
 ```
 
 - A) 12345, { address: { city: "Wonderland", zip: "12345" } }
-- B) 12345, { name: "Alice", age: 25, address: { city: "Wonderland" } }
+- B) undefined, { name: "Alice", age: 25, address: { city: "Wonderland", zip: "12345" } }
 - C) 12345, { name: "Alice", age: 25 }
-- D) undefined, { name: "Alice", age: 25, address: { city: "Wonderland", zip: "12345" } }
+- D) 12345, { name: "Alice", age: 25, address: { city: "Wonderland" } }
 
 ---
 
@@ -339,12 +339,12 @@ console.log(flattened);
 ```
 
 - A) [1, [2, 3], [4, [5, 6]]]
-- B) [1, 2, 3, 4, [
+- B) [1, 2, 3, [4,
 
 5, 6]]
 
 - C) [1, 2, 3, 4, 5, 6]
-- D) [1, 2, 3, [4, 5, 6]]
+- D) [1, 2, 3, 4, [5, 6]]
 
 ---
 
@@ -360,9 +360,9 @@ console.log(name, years, gender);
 ```
 
 - A) Alice, 25, female
-- B) Alice, 25, female
+- B) Alice, 30, female
 - C) Alice, 30, undefined
-- D) Alice, 30, female
+- D) Alice, 25, female
 
 ---
 
