@@ -70,10 +70,10 @@ console.log(operate(add, 3, 4));
 console.log(operate(square, 3, 4));
 ```
 
-- **A) 7, 7**
+- A) 7, 7
 - B) 12, 9
 - C) 7, 16
-- D) 7, 9
+- **D) 7, 9**
 
 ---
 
@@ -338,10 +338,7 @@ const flattened = arr.flat(2);
 console.log(flattened);
 ```
 
-- A) [1, [2, 3], [4
-
-, [5, 6]]]
-
+- A) [1, [2, 3], [4, [5, 6]]]
 - B) [1, 2, 3, [4, 5, 6]]
 - **C) [1, 2, 3, 4, 5, 6]**
 - D) [1, 2, 3, 4, [5, 6]]
@@ -448,7 +445,7 @@ console.log(foundIndex);
 2. B
 3. B
 4. D
-5. A
+5. D
 6. A
 7. B
 8. D
