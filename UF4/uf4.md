@@ -20,6 +20,10 @@ Crea una aplicació que permeti buscar i mostrar informació sobre races de goss
 4. Utilització de `fetch` per fer les peticions a l'API.
 5. Manipulació del DOM per mostrar la informació de la raça seleccionada i les imatges.
 
+Teniu un exemple a continuació:
+
+![Dog API](./uf4_example.gif)
+
 ##### Punts: 10
 
 ### Estructura de Puntuació
