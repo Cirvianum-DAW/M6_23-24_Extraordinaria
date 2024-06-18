@@ -11,6 +11,10 @@ Crea una aplicació de llista de tasques que permeti als usuaris afegir, elimina
 3. Utilització d'`addEventListener` per gestionar els esdeveniments.
 4. Manipulació del DOM per afegir, eliminar i modificar elements de la llista.
 
+Tens un exemple a continuació:
+
+![Task List](./uf3_tasques.gif)
+
 ##### Punts: 5
 
 ### Pautes de Puntuació
