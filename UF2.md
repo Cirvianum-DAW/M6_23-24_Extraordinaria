@@ -1,5 +1,11 @@
 ### UF 2: Estructures definides pel programador. Objectes.
 
+#### IMPORTANT
+
+- Tens 45 minuts per completar aquesta part de l'examen.
+- Cada resposta correcta val 1 punt.
+- Cada resposta incorrecta resta 1/3 punts.
+
 ---
 
 1. **Quina serà la sortida del següent codi?**

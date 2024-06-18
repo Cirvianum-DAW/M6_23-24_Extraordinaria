@@ -1,5 +1,11 @@
 ### UF 1: Sintaxi del llenguatge. Objectes predefinits del llenguatge
 
+#### IMPORTANT
+
+- Tens 45 minuts per completar aquesta part de l'examen.
+- Cada resposta correcta val 1 punt.
+- Cada resposta incorrecta resta 1/3 punts.
+
 ---
 
 1. **Quina és la diferència principal entre el codi executat al servidor i el codi executat al client?**
