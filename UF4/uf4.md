@@ -20,7 +20,9 @@ Crea una aplicació que permeti buscar i mostrar informació sobre races de goss
 4. Utilització de `fetch` per fer les peticions a l'API.
 5. Manipulació del DOM per mostrar la informació de la raça seleccionada i les imatges.
 
-Teniu un exemple a continuació:
+Trobaràs també que l'arxiu uf4.js conté un esbós de codi amb algunes funcions i variables que pots utilitzar per començar. T'hauria d'ajudar a organitzar el teu codi però potsr modificar-lo o començar de zero si ho creus convenient.
+
+Us deixo un exemple a continuació de com hauria de quedar (no es tindrà en compte si els estils no són exactament iguals, només la funcionalitat):
 
 ![Dog API](./uf4_example.gif)
 
