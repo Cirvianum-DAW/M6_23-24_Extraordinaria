@@ -45,7 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const breedId = e.target.value;
     if (breedId) {
       const breed = await fetchData(`/breeds/${breedId}`);
-      displayBreedInfo(breed);
+      const image = await fetchData(`/images/${breed.reference_image_id}`);
+      displayBreedInfo(breed, image);
       randomImageBtn.classList.remove("hidden");
     } else {
       breedInfo.classList.add("hidden");
@@ -53,6 +54,18 @@ document.addEventListener("DOMContentLoaded", function () {
       breedImage.classList.add("hidden");
     }
   });
+
+  // Funció per mostrar la informació de la raça seleccionada
+  function displayBreedInfo(breed, image) {
+    breedInfo.innerHTML = `
+            <h2 class="text-xl font-bold mb-2">${breed.name}</h2>
+            <p class="mb-2"><strong>Temperament:</strong> ${breed.temperament}</p>
+            <p class="mb-2"><strong>Life Span:</strong> ${breed.life_span}</p>
+            <img src="${image.url}" alt="${breed.name}" class="w-full rounded">
+        `;
+    breedInfo.classList.remove("hidden");
+    breedImage.classList.add("hidden");
+  }
 
   // Afegeix un esdeveniment de clic al botó per mostrar una imatge aleatòria
   randomImageBtn.addEventListener("click", async function () {
@@ -63,18 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Funció per mostrar la informació de la raça seleccionada
-  function displayBreedInfo(breed) {
-    breedInfo.innerHTML = `
-            <h2 class="text-xl font-bold mb-2">${breed.name}</h2>
-            <p class="mb-2"><strong>Temperament:</strong> ${breed.temperament}</p>
-            <p class="mb-2"><strong>Life Span:</strong> ${breed.life_span}</p>
-            <img src="${breed.image.url}" alt="${breed.name}" class="w-full rounded">
-        `;
-    breedInfo.classList.remove("hidden");
-  }
-
-  // Funció per mostrar una imatge aleatòria de la raça seleccionada
+  // Funció per mostrar una imatge de la raça seleccionada
   function displayBreedImage(image) {
     breedImage.innerHTML = `<img src="${image.url}" alt="Random ${
       breedSelect.options[breedSelect.selectedIndex].text
