@@ -23,8 +23,8 @@ let date = new Date("2023-01-01T00:00:00Z");
 console.log(date.getUTCFullYear() === 2023 && date.getUTCMonth() === 0);
 ```
 
-- A) true
-- **B) false**
+- **A) true**
+- B) false
 - C) Error
 - D) undefined
 
@@ -38,9 +38,9 @@ console.log(str.toUpperCase().charAt(6));
 ```
 
 - A) R
-- **B) O**
+- B) O
 - C) L
-- D) W
+- D) **W**
 
 ---
 
@@ -419,8 +419,8 @@ console.log(arr.length);
 
 - A) 3
 - B) 4
-- C) 5
-- **D) 6**
+- **C) 5**
+- D) 6
 
 ---
 
@@ -442,8 +442,8 @@ console.log(foundIndex);
 ### Respostes correctes
 
 1. C
-2. B
-3. B
+2. A
+3. D
 4. D
 5. D
 6. A
@@ -461,9 +461,9 @@ console.log(foundIndex);
 18. A
 19. C
 20. C
-21. A
+21. A i D
 22. B
 23. A
 24. B
-25. D
+25. C
 26. C
